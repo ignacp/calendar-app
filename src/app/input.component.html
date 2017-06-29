@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="date" class="form-control" id="start"
+              
+        required
+               [(ngModel)]="inputApp.start" name="start">
+      </div>
+ 
+      <div class="form-group">
+        <label for="days">Days</label>
+        <input type="text" class="form-control" id="days"
+              
+        required
+               [(ngModel)]="inputApp.days" name="days">
+        
+      </div>
+
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" id="country"
+              
+        required
+               [(ngModel)]="inputApp.country" name="country">
+        
+      </div>
+ 
+      <button type="submit" class="btn btn-success" (click)="sendData()">Submit</button>
+ 
+    </form>
+</div>
